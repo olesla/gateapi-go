@@ -1835,7 +1835,7 @@ ListSmallBalanceHistory List small balance history
 
 @return SmallBalanceHistory
 */
-func (a *WalletApiService) ListSmallBalanceHistory(ctx context.Context, localVarOptionals *ListSmallBalanceHistoryOpts) (SmallBalanceHistory, *http.Response, error) {
+func (a *WalletApiService) ListSmallBalanceHistory(ctx context.Context, localVarOptionals *ListSmallBalanceHistoryOpts) ([]SmallBalanceHistory, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodGet
 		localVarPostBody     interface{}
